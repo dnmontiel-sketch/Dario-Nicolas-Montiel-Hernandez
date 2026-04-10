@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aila Florería</title>
+  <title>Darío Montiel</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,8 +13,8 @@
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #fafafa;
-      color: #000;
+      background: #0f172a;
+      color: #fff;
       overflow-x: hidden;
     }
 
@@ -23,13 +23,14 @@
       padding: 30px;
       font-family: 'Cormorant Garamond', serif;
       font-size: 2.5em;
-      color: #000000;
+      color: #60a5fa;
     }
 
     .subtitulo {
-     font-size: 1.2rem;
-     margin-top: 5px;
-     color: #555;
+      font-size: 1.2rem;
+      margin-top: 5px;
+      color: #cbd5f5;
+      text-align: center;
     }
 
     nav {
@@ -37,18 +38,18 @@
       justify-content: center;
       gap: 40px;
       padding: 15px;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     nav a {
-      color: #333;
+      color: #cbd5f5;
       text-decoration: none;
       cursor: pointer;
       transition: .3s;
     }
 
     nav a:hover {
-      color: #f7496c;
+      color: #a78bfa;
     }
 
     .page {
@@ -67,143 +68,121 @@
       to { opacity:1; transform:translateY(0); }
     }
 
-    
-   .hero {
-    padding: 120px 20px;
-    min-height: 60vh; 
-  
-    background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-    url("IMG/AILAFLORERIA.jfif");
-  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    text-align: center;
-   }
+    .hero {
+      padding: 120px 20px;
+      min-height: 60vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(15,23,42,0.9)),
+        url("IMG/AILAFLORERIA.jfif");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     h1, h2 {
       font-family: 'Cormorant Garamond', serif;
-      color: #fcfafa;
+      color: #e0e7ff;
     }
 
     .btn-custom {
       margin-top: 30px;
       padding: 12px 30px;
-      border: 1px solid #ccf66b;
+      border: 1px solid #60a5fa;
       background: transparent;
-      color: #bdff53;
+      color: #60a5fa;
       cursor: pointer;
       transition: .3s;
+      border-radius: 10px;
     }
 
     .btn-custom:hover {
-      background: #f8242f;
+      background: #a78bfa;
       color: #000;
       transform: scale(1.05);
     }
 
-    .games {
+    .PERSONALIZADO {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 40px;
       flex-wrap: wrap;
-      margin-top: 40px;
     }
 
     .card-custom {
-      background: #111;
+      background: #1e293b;
       color: white;
-      padding: 30px;
+      padding: 20px;
       width: 260px;
-      border: 1px solid rgba(255,255,255,0.1);
-      cursor: pointer;
+      border-radius: 15px;
       transition: .3s;
     }
 
     .card-custom:hover {
-      border-color: #ff4a56;
-      transform: translateY(-8px) scale(1.02);
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(167,139,250,0.3);
+    }
+
+    .card-custom img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    #carouselFlores img {
+      height: 500px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .catalogo {
+      padding: 100px 20px;
+      min-height: 60vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(30,41,59,0.9)),
+        url("IMG/catalogo.jfif");
+      background-size: cover;
+      background-position: center;
+      color: white;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      border-top: 1px solid rgba(0,0,0,0.1);
-      color: #555;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #94a3b8;
     }
-
-    .card-custom img {
-     width: 800%;
-     height: 300px;
-     object-fit: cover; 
-     border-radius: 10px;
-     margin-bottom: 10px;
-    }
-
-    .PERSONALIZADO {
-     display: flex;
-     justify-content: center; 
-     gap: 100px; 
-     flex-wrap: wrap;
-    }
-
-    #carouselFlores img {
-     height: 600px;
-     object-fit: cover;
-     border-radius: 15px;
-    }
-
-    .catalogo {
-     padding: 100px 20px;
-     min-height: 60vh;
-
-     background:
-     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-     url("IMG/catalogo.jfif");
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-
-     color: white;
-     text-align: center;
-    }
-    
   </style>
 </head>
 
 <body>
 
-<header>AILA Florería</header>
-<p class="subtitulo">Mariana Munguía Galindo :)</p>
+<header>Darío Nicolás Montiel Hernández</header>
+<p class="subtitulo">Diseño Web Personal ✨</p>
 
 <nav>
   <a onclick="showPage('INICIO')">INICIO</a>
-  <a onclick="showPage('PERSONALIZADO')">PERSONALIZADO</a>
-  <a onclick="showPage('CATÁLOGO')">CATÁLOGO</a>
+  <a onclick="showPage('PERSONALIZADO')">PROYECTOS</a>
+  <a onclick="showPage('CATALOGO')">GALERÍA</a>
   <a onclick="showPage('CONTACTO')">CONTACTO</a>
 </nav>
 
 <!-- HOME -->
 <div id="INICIO" class="page active hero">
-  <h1>Variedad. Exclusividad. Libertad.</h1>
-  <p>AILA Florería cualquier tipo de flor.</p>
-  <button class="btn-custom" onclick="showPage('CARRUSEL')">ENTRAR</button>
+  <h1>Creatividad. Diseño. Innovación.</h1>
+  <p>Página personal de Darío Montiel.</p>
+  <button class="btn-custom" onclick="showPage('CARRUSEL')">VER MÁS</button>
 </div>
 
 <!-- CARRUSEL -->
 <div id="CARRUSEL" class="page">
-  <h2>Nuestros arreglos</h2>
+  <h2>Mis trabajos</h2>
 
   <div id="carouselFlores" class="carousel slide" data-bs-ride="carousel">
-    
     <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -220,7 +199,6 @@
 
     </div>
 
-    <!-- Botones -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselFlores" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
@@ -228,51 +206,50 @@
     <button class="carousel-control-next" type="button" data-bs-target="#carouselFlores" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
     </button>
-
   </div>
 </div>
 
-<!-- PERSONALIZADO -->
+<!-- PROYECTOS -->
 <div id="PERSONALIZADO" class="page">
-  <h2>Arreglos personalizados</h2>
+  <h2>Proyectos</h2>
   <div class="PERSONALIZADO">
-    <div class="card-custom">
-      <img src="IMG/clasico.jfif" class="img-fluid">
-      <h2>Ramos clásicos</h2>
-      <p>Elegantes y tradicionales</p>
-    </div>
-
 
     <div class="card-custom">
-      <img src="IMG/moderno.jfif" class="img-fluid">
-      <h2>Diseño moderno</h2>
-      <p>Creatividad única</p>
+      <img src="IMG/clasico.jfif">
+      <h2>Proyecto 1</h2>
+      <p>Diseño creativo</p>
     </div>
-
 
     <div class="card-custom">
-      <img src="IMG/bodas.jfif" class="img-fluid">
-      <h2>Eventos</h2>
-      <p>Bodas, XV y más</p>
+      <img src="IMG/moderno.jfif">
+      <h2>Proyecto 2</h2>
+      <p>Innovación digital</p>
     </div>
+
+    <div class="card-custom">
+      <img src="IMG/bodas.jfif">
+      <h2>Proyecto 3</h2>
+      <p>Eventos y branding</p>
+    </div>
+
   </div>
 </div>
 
-<!-- CATALOGO -->
-<div id="CATÁLOGO" class="page catalogo">
-  <h2>Flores Internacionales</h2>
-  <p>Flores de todo el mundo, atención personalizada y lujo total.</p>
-  <button class="btn-custom" onclick="alert('Catálogo próximamente 🌸')">Ver catálogo</button>
+<!-- GALERIA -->
+<div id="CATALOGO" class="page catalogo">
+  <h2>Galería</h2>
+  <p>Explora mis trabajos más destacados.</p>
+  <button class="btn-custom" onclick="alert('Galería próximamente 🚀')">Ver más</button>
 </div>
 
 <!-- CONTACTO -->
 <div id="CONTACTO" class="page">
-  <h2>CONTACTO</h2>
-  <p>Email: ailafloreria@email.com</p>
-  <p>Telefono: 4613132222</p>
+  <h2>Contacto</h2>
+  <p>Email: dario@email.com</p>
+  <p>Teléfono: 1234567890</p>
 </div>
 
-<footer>© 2026 AILA Florería — Experiencia Única</footer>
+<footer>© 2026 Darío Montiel — Portafolio Personal</footer>
 
 <script>
 function showPage(pageId) {
